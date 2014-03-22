@@ -4,8 +4,8 @@ class CreateImages < ActiveRecord::Migration
       t.string :title
       t.string :file
       t.string :url
+      t.string :source, default: 'file'
       t.references :user, index: true
-      t.boolean :is_mirror, default: false
 
       t.timestamps
     end
