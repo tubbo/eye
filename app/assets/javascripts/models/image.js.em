@@ -2,5 +2,7 @@
 
 class Eye.Image extends DS.Model
   title: DS.attr 'string'
-  file: DS.attr 'string'
+  source: DS.attr 'string'
+  original: DS.attr 'string'
+  thumbnail: DS.attr 'string'
   user: DS.belongsTo 'Eye.User'

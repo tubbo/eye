@@ -11,6 +11,6 @@ class Eye.ImageTypeSelect extends Em.Component
   change: ->
     @_hideAll() and @_fadeInCurrent()
 
-  _hideAll: -> $('.upload .choice').hide() and return true
+  _hideAll: -> $('.upload .choice').hide()
 
-  _fadeInCurrent: -> $("##{@value}").fadeIn(250) and return true
+  _fadeInCurrent: -> $("##{@value}").fadeIn 250

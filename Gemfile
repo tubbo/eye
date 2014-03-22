@@ -10,6 +10,7 @@ gem 'devise'
 gem 'sidekiq'
 gem 'figaro'
 
+gem 'sprockets', '<= 2.11.0'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'foundation-rails'
@@ -22,6 +23,7 @@ gem 'ember_script-rails'
 
 group :development do
   gem 'meta_request'
+  gem 'quiet_assets'
 end
 
 group :development, :test do

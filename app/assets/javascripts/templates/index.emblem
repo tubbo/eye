@@ -1,4 +1,11 @@
 .row
-  h2 Upload a new image!
+  .right
+    linkTo 'images.new' class="btn primary" | New Image
 .row
-  Eye.UploadImage
+  h2 Latest Images
+.row
+  ul.clearing-thumbs data-clearing="data-clearing"
+    each controller
+      li
+        a href=url title=title
+          img src=thumbnail alt=title
