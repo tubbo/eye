@@ -7,6 +7,7 @@ gem 'active_model_serializers'
 gem 'carrierwave'
 gem 'fog'
 gem 'devise'
+gem 'sidekiq'
 
 gem 'sass-rails'
 gem 'coffee-rails'
