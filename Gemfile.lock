@@ -28,6 +28,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    asset_sync (1.0.0)
+      activemodel
+      fog (>= 1.8.0)
     atomic (1.1.16)
     barber (0.4.2)
       ember-source
@@ -233,6 +236,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  asset_sync
   carrierwave
   coffee-rails
   devise

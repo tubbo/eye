@@ -34,4 +34,5 @@ end
 group :production do
   gem 'rack-cache'
   gem 'redis-rails'
+  gem 'asset_sync'
 end
