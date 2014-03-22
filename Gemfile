@@ -8,6 +8,7 @@ gem 'carrierwave'
 gem 'fog'
 gem 'devise'
 gem 'sidekiq'
+gem 'figaro'
 
 gem 'sass-rails'
 gem 'coffee-rails'
