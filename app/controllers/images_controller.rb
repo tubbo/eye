@@ -1,6 +1,7 @@
 class ImagesController < ApplicationController
   respond_to :json
   before_filter :find_image, except: %s(create index)
+  before_filter :authenticate_user!, except: %s(index show)
 
   def index
     @images = Image.where search_params
