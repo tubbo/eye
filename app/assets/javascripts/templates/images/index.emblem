@@ -1,0 +1,8 @@
+#images
+  .row
+    h1 All Images
+  .row
+    ul
+      each controller
+        li
+          linkTo 'images.show' id | #{title}

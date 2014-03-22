@@ -1,0 +1,18 @@
+.row.chooser
+  dl.sub-nav
+    dt Upload from...
+    dd
+      a href="#" id="mirror-file" URL
+    dd
+      a href="#" id="upload-file" File
+
+.row.upload
+  #mirror-file
+    label for="image[url]" URL:
+    = input name="image[url]" id="url" placeholder="http://.."
+  #upload-file
+    label for="image[file]" File:
+    = input name="image[file]" id="file" type="file"
+
+.row.actions
+  = input type="submit" value="Upload Image"

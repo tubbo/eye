@@ -1,8 +1,7 @@
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery.serialize-hash
 //= require handlebars
 //= require ember
 //= require ember-data
 //= require eye
-

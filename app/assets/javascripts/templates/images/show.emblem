@@ -1,0 +1,16 @@
+#image
+  .title.row
+    h1= title
+  .content.row
+    img src=url alt=title
+  .share.row
+    dl.sub-nav
+      dt SHARE
+      dd
+        a href="#" Facebook
+      dd
+        a href="#" Twitter
+      dd
+        a href="#" Reddit
+      dd
+        a href="#" E-Mail

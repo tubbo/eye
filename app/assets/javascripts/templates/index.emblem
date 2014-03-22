@@ -1,0 +1,4 @@
+.row
+  h2 Upload a new image!
+.row
+  Eye.UploadImage
