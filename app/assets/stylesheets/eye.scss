@@ -1240,3 +1240,33 @@
 // $range-slider-handle-cursor: pointer;
 
 @import 'foundation';
+
+
+.new_image_form {
+  .url { display: none; }
+
+  .upload {
+    height: 100px;
+  }
+
+  input[type="submit"] {
+    min-width: 200px;
+  }
+
+  input[disabled] {
+    background: #FFF;
+  }
+}
+
+#images {
+  min-height: 400px;
+}
+
+.none {
+  p {
+    margin-top: 150px;
+    text-align: center;
+    font-style: italic;
+    color: darken(#CCC, 20%);
+  }
+}

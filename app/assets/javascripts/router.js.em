@@ -2,5 +2,6 @@
 
 Eye.Router.map ->
   @resource 'images', ->
-    @route 'new', path: 'images/new'
-    @route 'show', path: 'images/:id'
+    @route 'new', path: 'new'
+    @route 'show', path: ':id'
+  @route 'login', path: '/login'

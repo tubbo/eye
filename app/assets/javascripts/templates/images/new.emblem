@@ -1,13 +1,26 @@
-.row.chooser
-  Eye.ImageTypeSelect choiceNames="url,file"
+fieldset.row
+  legend New Image
 
-.row.upload
-  #url.choice
-    label for="image[url]" URL:
-    = input name="image[url]" placeholder="http://.."
-  #file.choice
-    label for="image[file]" File:
-    = input name="image[file]" type="file"
+  .chooser
+    label for="image[source]" Source:
+    select name="image[source]"
+      option value="file" File
+      option value="url" URL
 
-.row.actions
-  = input type="submit" value="Upload Image"
+  .upload
+    .url.choice
+      label for="image[url]" URL:
+      = input name="image[url]" type="url" placeholder="http://.."
+    .file.choice
+      label for="image[file]" File:
+      .row.collapse
+        input#uploader name="image[file]" type="file" style="display:none"
+        .small-10.columns
+          = input id="uploader-display" placeholder="Choose file to upload" disabled="disabled"
+        .small-2.columns
+          a.button.postfix id="uploader-button" href="#" Upload
+
+  .row
+    .large-12.columns
+      .right
+        = input type="submit" value="Upload New Image" class="button primary"

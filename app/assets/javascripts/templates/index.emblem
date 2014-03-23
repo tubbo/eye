@@ -1,11 +1,14 @@
 .row
   .right
-    linkTo 'images.new' class="btn primary" | New Image
+    linkTo 'images.new' class="button primary" | New Image
 .row
   h2 Latest Images
-.row
+#images.row
   ul.clearing-thumbs data-clearing="data-clearing"
     each controller
       li
         a href=url title=title
           img src=thumbnail alt=title
+    else
+      .none
+        p There are no images in the public timeline.

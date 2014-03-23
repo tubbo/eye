@@ -1,6 +1,9 @@
 header.row
-  h1 eye, an image share
+  h1
+    linkTo 'index' | eye, an image share
 section
   outlet
 footer.row
-  p.right powered by 100% pure beard
+  p.right
+    span style="padding-right: 5px" powered by
+    a href="http://psychedeli.ca" target="_blank" 100% pure beard
