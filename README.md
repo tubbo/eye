@@ -19,6 +19,12 @@ content delivery.
 - Treat all images as "secret", that is, only users that have the proper
   `Referer-ID` HTTP header will be allowed access
 
+## Roadmap
+
+- Tests
+- Chef cookbook
+- Deployment on i.psychedeli.ca
+
 ## Setup
 
 Install Ruby 2.1.1 and Redis:
@@ -67,3 +73,4 @@ You can upload images, if you have access, through the web app.
 [imgur]: http://imgur.com
 [s3]: http://aws.amazon.com/s3
 [cf]: http://aws.amazon.com/cloudfront
+
