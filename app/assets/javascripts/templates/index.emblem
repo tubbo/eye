@@ -1,6 +1,9 @@
 .row
   .right
-    linkTo 'images.new' class="button primary" | New Image
+    if controller.current_user?
+      linkTo 'images.new' class="small button primary" | New Image
+    else
+      linkTo 'login' class="small button primary" | Log in to post an image
 .row
   h2 Latest Images
 #images.row

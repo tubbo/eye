@@ -40,9 +40,10 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-bg: #fff;
+$body-font-color: #222;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$title-font-family: "Metrophobic", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -1130,11 +1131,11 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: $body-bg;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 75px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1142,7 +1143,7 @@
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-dropdown-link-color: #fff;
 // $topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-link-weight: normal;
@@ -1151,7 +1152,7 @@
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+$topbar-link-color: $body-font-color;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
@@ -1240,33 +1241,38 @@
 // $range-slider-handle-cursor: pointer;
 
 @import 'foundation';
+@import 'images';
+@import 'forms';
 
+#main {
+  margin-top: 20px;
 
-.new_image_form {
-  .url { display: none; }
+}
 
-  .upload {
-    height: 100px;
+.github-ribbon {
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6, .button {
+  font-family: $title-font-family;
+}
+
+.top-bar {
+  border-bottom: 1px solid #DDD;
+
+  .name h1 a {
+    font-size: 56px;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
-  input[type="submit"] {
-    min-width: 200px;
-  }
-
-  input[disabled] {
-    background: #FFF;
+  .slogan h2 {
+    color: lighten(#222, 40%);
+    position: relative;
+    right: 160px;
+    top: 14px;
   }
 }
 
-#images {
-  min-height: 400px;
-}
-
-.none {
-  p {
-    margin-top: 150px;
-    text-align: center;
-    font-style: italic;
-    color: darken(#CCC, 20%);
-  }
-}

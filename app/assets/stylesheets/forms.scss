@@ -1,0 +1,15 @@
+.new_image_form {
+  .url { display: none; }
+
+  .upload {
+    height: 100px;
+  }
+
+  input[type="submit"] {
+    min-width: 200px;
+  }
+
+  input[disabled] {
+    background: #FFF;
+  }
+}

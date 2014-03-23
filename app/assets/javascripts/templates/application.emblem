@@ -1,7 +1,15 @@
-header.row
-  h1
-    linkTo 'index' | eye, an image share
-section
+header
+  a.github-ribbon href="http://github.com/tubbo/eye" target="_blank" Fork me on GitHub!
+  nav.top-bar data-topbar="data-topbar"
+    ul.title-area
+      li.name
+        h1
+          linkTo 'index' | eye
+    section.top-bar-section
+      ul.right
+        li.slogan
+          h2 simple image sharing
+section#main
   outlet
 footer.row
   p.right
