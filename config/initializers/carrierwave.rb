@@ -2,8 +2,8 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
     :provider               => 'AWS',
-    :aws_access_key_id      => Eye.config.aws.access_key_id,
-    :aws_secret_access_key  => Eye.config.aws.secret_access_key
+    :aws_access_key_id      => ENV['AWS_ACCESS_KEY_ID'],
+    :aws_secret_access_key  => ENV['AWS_SECRET_ACCESS_KEY]'
   }
   config.fog_directory  = 'f.psychedeli.ca/eye'
   config.fog_public     = true
