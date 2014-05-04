@@ -98,9 +98,6 @@ GEM
     erubis (2.7.0)
     excon (0.32.1)
     execjs (2.0.2)
-    figaro (0.7.0)
-      bundler (~> 1.0)
-      rails (>= 3, < 5)
     fog (1.21.0)
       fog-brightbox
       fog-core (~> 1.21, >= 1.21.1)
@@ -262,7 +259,6 @@ DEPENDENCIES
   ember-rails
   ember_script-rails
   emblem-rails
-  figaro
   fog
   foundation-rails
   jquery-rails (= 2.2.2)

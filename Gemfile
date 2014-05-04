@@ -8,7 +8,6 @@ gem 'carrierwave'
 gem 'fog'
 gem 'devise'
 gem 'sidekiq'
-gem 'figaro'
 gem 'puma'
 
 gem 'sprockets', '<= 2.11.0'
