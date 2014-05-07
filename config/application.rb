@@ -30,7 +30,9 @@ module Eye
     config.ember.variant = :development
 
     # Use localhost as mail server (for Devise)
-    config.action_mailer.default_url_options = { host: 'localhost:3000' }
+    config.action_mailer.default_url_options = {
+      host: 'localhost:3000'
+    }
 
     # Amazon Web Services configuration
     config.eye.aws.access_key_id = ENV['AWS_ACCESS_KEY_ID']
